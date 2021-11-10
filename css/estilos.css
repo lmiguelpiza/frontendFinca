@@ -1,0 +1,784 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Rockness;
+    src: url(fonts/Rockness.ttf);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: fuente1;
+    src: url(fonts/fuente1.ttf);
+}
+
+@font-face {
+    font-family: StatesvilleDemoRegular;
+    src: url(fonts/StatesvilleDemoRegular.ttf);
+}
+
+@font-face {
+    font-family: ChampagneyLimousines;
+    src: url(fonts/ChampagneyLimousines.ttf);
+}
+
+
+
+.contenedorMedio {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.contenedorSuperiorServicios1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.cardCategoria {
+    border-radius: 10px;
+    min-height: 460px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/img/fincas.jpg);
+}
+
+.CategoriaTitulo {
+    font-family: BebasNeue;
+    font-size: 4em;
+    text-align: center;
+}
+
+.inputNameCatg {
+    top: 130px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+.inputDescriptionCatg {
+    top: 170px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.btnRegistrarCategoria {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 360px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnRegistrarCategoria:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.btnConsultaCategoria {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 400px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnConsultaCategoria:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.btnGuardarCategoria {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 440px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnGuardarCategoria:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.cardFincas {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/img/finca2.jpg);
+}
+
+.CategoriaFincas {
+    font-family: BebasNeue;
+    font-size: 4em;
+    color: #000000;
+    border-radius: 0.3em;
+    text-align: center;
+    background: linear-gradient(rgba(144, 161, 155, 1), rgba(123, 141, 134, 1));
+}
+
+.inputNameFincas {
+    top: 130px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.inputBrandFincas {
+    top: 170px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.inputRoomsFincas {
+    top: 210px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.inputDescriptionFincas {
+    top: 250px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.selectSelectCategory {
+    top: 290px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #000000;
+}
+
+.btnRegistrarFincas {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 360px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnRegistrarFincas:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.btnConsultaFincas {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 400px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnConsultaFincas:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.btnActualizarFincas {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 440px;
+    left: 30px;
+    height: 30px;
+    width: 214px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnActualizarFincas:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.cardClientes {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/img/finca6.jpg);
+}
+
+.CategoriaClientes {
+    font-family: BebasNeue;
+    font-size: 4em;
+    color: #032313;
+    text-align: center;
+}
+
+.inputEmailClientes {
+    top: 130px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.inputPasswordClientes {
+    top: 170px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.inputNameClientes {
+    top: 210px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.inputAgeClientes {
+    top: 250px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.btnRegistrarClientes {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 360px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnRegistrarClientes:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.btnConsultarClientes {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 400px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnConsultarClientes:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.btnGuardarClientes {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 440px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnGuardarClientes:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.cardMensajes {
+    border-radius: 10px;
+    min-height: 460px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/img/finca7.jpg);
+}
+
+.tituloMensajes {
+    font-family: BebasNeue;
+    font-size: 3.5em;
+    text-align: left;
+    color: #ffffff;
+    background: linear-gradient(rgb(16, 19, 18), rgb(0, 0, 0));
+    border-radius: .2em;
+    height: 80px;
+    text-align: center;
+}
+
+.inputMensaje {
+    top: 160px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+.subTitulo1SelectMensaje {
+    font-family: BebasNeue;
+    font-size: 1.76em;
+    top: 230px;
+    width: 170px;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(5, 7, 12, 0.70), rgba(5, 7, 12, 0.70));
+    position: relative;
+}
+
+.selectFincas {
+    top: 370px;
+    left: 20px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #bbc3bf;
+}
+
+.subTitulo2SelectMensaje {
+    font-family: BebasNeue;
+    font-size: 1.76em;
+    top: 96px;
+    left: 2px;
+    width: 210px;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(5, 7, 12, 0.70), rgba(5, 7, 12, 0.70));
+    position: relative;
+}
+
+.selectMensajes {
+    top: 270px;
+    left: 20px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #bbc3bf;
+}
+
+.btnRegistrarMensaje {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 420px;
+    left: 30px;
+    height: 30px;
+    width: 140px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnRegistrarMensaje:hover {
+    background-color: #76d85e;
+    color: #ffffff;
+    transition: color 1s;
+}
+
+.btnConsultarMensaje {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 460px;
+    left: 30px;
+    height: 30px;
+    width: 140px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnConsultarMensaje:hover {
+    background-color: #76d85e;
+    color: #ffffff;
+    transition: color 1s;
+}
+
+.btnGuardarMensaje {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 500px;
+    left: 30px;
+    height: 30px;
+    width: 140px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnGuardarMensaje:hover {
+    background-color: #76d85e;
+    color: #ffffff;
+    transition: color 1s;
+}
+
+.cardReservaciones {
+    border-radius: 10px;
+    min-height: 460px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/img/finca8.jpg);
+}
+
+.tituloResrvaciones {
+    font-family: BebasNeue;
+    font-size: 2.6em;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    width: 200px;
+}
+
+.inptFechaInicio {
+    top: 160px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+.inptFechaFinalizacion {
+    top: 270px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+.subTitulo1SelectReservaciones {
+    font-family: BebasNeue;
+    font-size: 1.76em;
+    top: 50px;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(5, 7, 12, 0.70), rgba(5, 7, 12, 0.70));
+    width: 210px;
+    position: relative;
+}
+
+.subTitulo2SelectReservaciones {
+    font-family: BebasNeue;
+    font-size: 1.76em;
+    top: 100px;
+    left: 5px;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(5, 7, 12, 0.70), rgba(5, 7, 12, 0.70));
+    width: 210px;
+    position: relative;
+}
+
+.inputReservas{
+    top: 80px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #bbc3bf;
+}
+
+.inputReservas2{
+    top: 235px;
+    left: 30px;
+    height: 30px;
+    width: 170px;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    background-color: #bbc3bf;
+}
+
+.btnRegistrarReservacion {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 380px;
+    left: 30px;
+    height: 30px;
+    width: 140px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background: linear-gradient(rgba(214, 216, 222, 0.7), rgba(234, 236, 241, 0.7));
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnRegistrarReservacion:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.btnConsultarReservacion {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 420px;
+    left: 30px;
+    height: 30px;
+    width: 140px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background: linear-gradient(rgba(214, 216, 222, 0.7), rgba(234, 236, 241, 0.7));
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnConsultarReservacion:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.btnGuardarReservacion {
+    font-family: ChampagneyLimousines;
+    font-size: 1.4em;
+    top: 460px;
+    left: 30px;
+    height: 30px;
+    width: 140px;
+    position: relative;
+    position: absolute;
+    border-radius: .7em;
+    border: none;
+    background: linear-gradient(rgba(214, 216, 222, 0.7), rgba(234, 236, 241, 0.7));
+    color: #000000;
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.btnGuardarReservacion:hover {
+    background-color: #76d85e;
+    color: #000000;
+    transition: color 1s;
+}
+
+.ContenedorFooter {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+    background: linear-gradient(rgba(231, 96, 29, 0.7), rgba(37, 15, 2, 0.7));
+}
+
+.distribucionFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.informacionFooter {
+    font-family: ChampagneyLimousines;
+    font-size: 1.2em;
+    padding: 10px 0px 10px 60px;
+}
+
+.iconoFaceBook {
+    height: 60px;
+    width: 60px;
+    left: auto;
+    padding: 10px;
+    position: relative;
+    position: absolute;
+    background-size: cover;
+    background-image: url(/img/facebook.png);
+}
+
+.iconoInstagram {
+    height: 70px;
+    width: 70px;
+    left: 570px;
+    padding: 10px;
+    position: relative;
+    position: absolute;
+    background-size: cover;
+    background-image: url(/img/instagram.png);
+}
+
+.iconoTwitter {
+    height: 50px;
+    width: 66px;
+    left: 230px;
+    padding: 10px;
+    position: relative;
+    background-size: cover;
+    background-image: url(/img/Twitter.png);
+}

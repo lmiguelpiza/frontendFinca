@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/registrar.js"></script>
+    <script src="js/consultar.js"></script>
+    <script src="js/editar.js"></script>
+    <script src="js/borrar.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Renta de Fincas</title>
+</head>
+
+<body>
+    
+      <!--listado Categoria-->
+    <div class="contenedorMedio">
+        <div class="contenedorSuperiorServicios1">
+
+            <div class="cardCategoria">
+
+                <div>
+                    <h1 class="CategoriaTitulo">Categoria</h1>
+                </div>
+
+                <input type="text" id="nameCatg" placeholder="Nombre/Name" class="inputNameCatg" />
+                <input type="text" id="descriptionCatg" placeholder="Descripción/Description" class="inputDescriptionCatg" />
+
+                <button onclick="registroCatg()" id="btnRegistrarCtg" class="btnRegistrarCategoria">Registrar</button>
+                <button onclick="consultaCatg()" id="btnConsultaCtg" class="btnConsultaCategoria">Consultar</button>
+                <button onclick="actualizar()" id="btnGuardarCtg" class="btnGuardarCategoria">GuardarEdicion</button>
+
+                <div id="listadoCatg" style="float: center; padding: 12px; text-align: left"></div>
+            </div>
+
+            <!--listado Fincas -->
+            <div class="cardFincas">
+
+                <h1 class="CategoriaFincas">Fincas</h1>
+
+                <input type="text" id="name" placeholder="Nombre/Name" class="inputNameFincas" />
+                <input type="text" id="brand" placeholder="Marca/Brand" class="inputBrandFincas" />
+                <input type="number" id="rooms" placeholder="Habitaciones/Rooms" class="inputRoomsFincas" />
+                <input type="text" id="description" placeholder="Descripción/Description" class="inputDescriptionFincas" />
+                <select id="selectCategory" class="selectSelectCategory"></select>
+
+                <button onclick="registro()" id="btnRegistrar" class="btnRegistrarFincas">Registrar</button>
+                <button onclick="consulta()" id="btnConsulta" class="btnConsultaFincas">Consultar</button>
+                <button onclick="actualizar()" id="btnGuardar" class="btnActualizarFincas">GuardarEdicion</button>
+                <div id="listado" style="float: center; padding: 12px; text-align: left"></div>
+            </div>
+            <!--listado Clientes-->
+            <div class="cardClientes">
+                <h1 class="CategoriaClientes">Clientes</h1>
+                <input type="text" id="emailCli" placeholder="Correo electrónico/e-mail" class="inputEmailClientes" />
+                <input type="text" id="passwordCli" placeholder="Contraseña/Password" class="inputPasswordClientes" />
+                <input type="text" id="nameCli" placeholder="Nombre/Name" class="inputNameClientes" />
+                <input type="number" id="ageCli" placeholder="Edad/Age" class="inputAgeClientes" />
+
+                <button onclick="registroCli ()" id="btnRegistrar1" class="btnRegistrarClientes">Registrar</button>
+                <button onclick="consultaCli()" id="btnConsulta1" class="btnConsultarClientes">Consultar</button>
+                <button onclick="actualizarCli()" id="btnGuardar1" class="btnGuardarClientes">GuardarEdicion</button>
+
+                <div id="listadocli" style="float: center; padding: 12px; text-align: left"></div>
+            </div>
+                
+        <!--listado Mensajes -->
+            
+
+            <div class="cardMensajes">
+
+                <h1 class="tituloMensajes">Mensajes</h1>
+                <input type="text" id="message" placeholder="Mensaje/Message" class="inputMensaje" />
+
+                <h2 class="subTitulo1SelectMensaje">Seleccionar Finca</h2>
+                <select class="selectFincas"></select>
+                <h2 class="subTitulo2SelectMensaje">Seleccionar Cliente</h2>
+                <select class="selectMensajes"></select>
+
+                <button onclick="registroMess()" id="btnRegistrar2" class="btnRegistrarMensaje">Registrar</button>
+                <button onclick="consultaMess()" id="btnConsulta2" class="btnConsultarMensaje">Consultar</button>
+                <button onclick="actualizarMess()" id="btnGuardar2" class="btnGuardarMensaje">GuardarEdicion</button>
+
+                <div id="listadoM" style="float: center; padding: 12px; text-align: left"></div>
+
+            </div>
+
+            <div class="cardReservaciones">
+                    <!--listado Reservaciones -->
+                <h1 class="tituloResrvaciones">Reservaciones</h1>
+                <input type="date" id="startDate" placeholder="Star Date" class="inptFechaInicio" />
+                <h2 class="subTitulo1SelectReservaciones">Seleccionar Finca</h2>
+                <select class="inputReservas"></select>
+
+                <input type="date" id="devolutionDate" placeholder="Devolucion Date" class="inptFechaFinalizacion" />
+                <h2 class="subTitulo2SelectReservaciones">Seleccionar Cliente</h2>
+                <select class="inputReservas2"></select>
+
+
+                <button onclick="registroRes()" id="btnRegistrarRese" class="btnRegistrarReservacion">Registrar</button>
+                <button onclick="consultaRes()" id="btnConsultaRese" class="btnConsultarReservacion">Consultar</button>
+                <button onclick="actualizarRes()" id="btnGuardarRese" class="btnGuardarReservacion">GuardarEdicion</button>
+
+                <div id="listadoRes" style="float: center; padding: 12px; text-align: left"></div>
+            </div>
+            
+
+        </div>  
+    </div>
+       
+</body>
+<footer>
+
+    <div class="ContenedorFooter">
+        <div class="distribucionFooter">
+            <div class="informacionFooter">
+                <p>
+                    Renta de fincas
+                </p>
+                <p>
+                    rentaFincas@masmelo.com.co
+                </p>
+                <p>
+                    cel:(320)5006000
+                </p>
+                <p>
+                    Cll 12 # 40-50
+                </p>
+            </div>
+            <div class="iconos">
+                <div class="iconoFaceBook"></div>
+                <div class="iconoInstagram"></div>
+                <div class="iconoTwitter"></div>
+            </div>
+
+
+            <div>
+                <div class="iconoPayU"></div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</footer>
+
+</html>
+
+</html>
